@@ -1723,13 +1723,14 @@ void spanningTreeCheck(TableInfoMap& tableInfoMap, JobStepVector joinSteps, JobI
 			args.add(errStr);
 			spanningTree = false;
 		}
-
+#if 0
 		// 2. no cycles
 		if (spanningTree && (nodeSet.size() - pathSet.size()/2 != 1))
 		{
 			errcode = ERR_CIRCULAR_JOIN;
 			spanningTree = false;
 		}
+#endif
 	}
 
 	if (!spanningTree)

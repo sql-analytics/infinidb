@@ -25452,9 +25452,9 @@ if test "x$with_debug" = "xyes"; then
 	echo "$as_me:$LINENO: result: yes" >&5
 echo "${ECHO_T}yes" >&6
 else
-	idb_cxxflags="-g0 -O3 -fno-strict-aliasing -Wall $cxx_extra_flags"
+	idb_cxxflags="-ggdb3 -O3 -fno-strict-aliasing -Wall $cxx_extra_flags"
 
-	idb_cflags='-g0 -O3 -fno-strict-aliasing -Wall'
+	idb_cflags='-ggdb3 -O3 -fno-strict-aliasing -Wall'
 
 	echo "$as_me:$LINENO: result: no" >&5
 echo "${ECHO_T}no" >&6
